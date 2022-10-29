@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <br />
+    <p>Kindly fill in your correct details</p>
+    <hr />
+    <form method="post" action="./success.html">
+      <table>
+        <tr>
+          <td>
+            <label for="first_name"> First Name</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="Enter your first name"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="last_name"> Last Name</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="last_name"
+              placeholder="Enter your last name"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="phone_number"> Phone Number</label>
+          </td>
+          <td>
+            <input
+              type="tel"
+              name="phone_number"
+              placeholder="1234-567-8900"
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email"> Email</label>
+          </td>
+          <td>
+            <input
+              type="email"
+              name="email"
+              id=""
+              placeholder="Enter your Email"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="gender"> Gender</label>
+          </td>
+          <td>
+            <select>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Others</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="dob"> Date of Birth</label>
+          </td>
+          <td>
+            <input type="date" name="dob" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="colour">Select your favourite colour</label>
+          </td>
+          <td>
+            <input type="color" name="colour" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="password">Password</label>
+          </td>
+          <td>
+            <input
+              type="password"
+              name="password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              required
+            />
+          </td>
+        </tr>
+      </table>
+      <tr>
+        <td>
+          <input type="reset" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="submit" value="submit" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            Do you have an account alreadly! Proceed to Login<br /><a
+              href="login.html"
+              >Login</a
+            >
+          </p>
+        </td>
+      </tr>
+    </form>
+  </body>
+</html>

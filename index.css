@@ -1,0 +1,45 @@
+input {
+    border-bottom: #d1d4d4;
+    padding: 2%;
+    margin: 3px;
+}
+
+input:focus {
+    background-color: blue;
+}
+
+label {
+    padding: 5%;
+    margin: 3px;
+    color: black;
+}
+
+form {
+    max-width: 500px;
+    min-width: 250px;
+    padding: 10px 20px;
+    background: #d1d4d4;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: blue;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    margin: 100px;
+    padding: 2px;
+    color: red;
+    background-color: rgb(46, 45, 45);
+    border-radius: 10%;
+
+}
